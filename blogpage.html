@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>My Blog</title>
+</head>
+<body style="margin-left: 12%; margin-right: 12%;">
+<h1 style="text-align: center;" >My Blog</h1>
+<p>Welcome to my blog where I share my thoughts and opinions on various topics.</p>
+<hr>
+<h2>Latest Posts</h2>
+<ul>
+<li><a href="https://www.iiests.ac.in/">My College</a></li>
+<h3> Some Pictures of my college</h3><hr>
+<img src="clocktower.jpg" alt="clock tower" width="300"> <br><hr>
+
+<img src="graveyard.jpg" alt="graveyard" width="300">
+<h3>A video  of my college</h3><hr>
+<video id="myVideo" width="700" height="550">
+    <source src="iiest.mp4" type="video/mp4">
+   
+    Your browser does not support the video tag.
+  </video>
+  <button id="playBtn">Play</button>
+  <button id="pauseBtn">Pause</button>
+  <button id="muteBtn">Mute</button>
+  <button id="unmuteBtn">Unmute</button>
+  <script>
+    let video = document.getElementById("myVideo");
+    let playBtn = document.getElementById("playBtn");
+    let pauseBtn = document.getElementById("pauseBtn");
+    let muteBtn = document.getElementById("muteBtn");
+    let unmuteBtn = document.getElementById("unmuteBtn");
+  
+    playBtn.addEventListener("click", function() {
+      video.play();
+    });
+  
+    pauseBtn.addEventListener("click", function() {
+      video.pause();
+    });
+  
+    muteBtn.addEventListener("click", function() {
+      video.volume = 0;
+      video.muted = true;
+    });
+  
+    unmuteBtn.addEventListener("click", function() {
+      video.volume = 1;
+      video.muted = false;
+    });
+  </script>
+  
+
+
+<li><a href="https://gaabesu.in/">Gaabesu</a></li>
+<li><a href="https://www.visittnt.com/blog/best-places-to-visit-in-india/">The best places to visit in India</a></li>
+</ul>
+<hr>
+<h2>About Me</h2>
+<p>My name is Vinit Ranjan and I am a student of computer science and Technology. I love to write about anything that interests me and share it with the world. I hope you enjoy reading my blog and feel free to leave your comments and feedback.</p>
+<h4><a href="homepage.html">BACK</a></h4>
+</body>
+</html>
